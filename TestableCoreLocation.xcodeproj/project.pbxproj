@@ -17,6 +17,10 @@
 		0A95487D1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */; };
 		0A95487E1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */; };
 		0A9548811A4B1C120065D9FA /* ShimMethodForwardingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95487F1A4B1C120065D9FA /* ShimMethodForwardingListTests.swift */; };
+		0A9548831A4B35EA0065D9FA /* MutableCLLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548821A4B35EA0065D9FA /* MutableCLLocationTests.swift */; };
+		0A9548861A4B39120065D9FA /* CLLocationCoordinate2DEquatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548851A4B39120065D9FA /* CLLocationCoordinate2DEquatability.swift */; };
+		0A9548891A4B39F30065D9FA /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548881A4B39F30065D9FA /* CLLocation.swift */; };
+		0A95488A1A4B3DE30065D9FA /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548881A4B39F30065D9FA /* CLLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,9 @@
 		0A9548781A4A9F090065D9FA /* CLLocationManagerCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerCalls.swift; sourceTree = "<group>"; };
 		0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimMethodForwarding.swift; sourceTree = "<group>"; };
 		0A95487F1A4B1C120065D9FA /* ShimMethodForwardingListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimMethodForwardingListTests.swift; sourceTree = "<group>"; };
+		0A9548821A4B35EA0065D9FA /* MutableCLLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableCLLocationTests.swift; sourceTree = "<group>"; };
+		0A9548851A4B39120065D9FA /* CLLocationCoordinate2DEquatability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2DEquatability.swift; sourceTree = "<group>"; };
+		0A9548881A4B39F30065D9FA /* CLLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 		0A9548571A4A9CD80065D9FA /* TestableCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
+				0A9548871A4B39E20065D9FA /* CLLocation */,
 				0A9548741A4A9E8F0065D9FA /* CLLocationManager */,
 				0A9548581A4A9CD80065D9FA /* Supporting Files */,
 				0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */,
@@ -103,6 +111,7 @@
 			children = (
 				0A9548651A4A9CD80065D9FA /* Supporting Files */,
 				0A9548711A4A9D2C0065D9FA /* Tests */,
+				0A9548841A4B38EE0065D9FA /* Tools */,
 			);
 			path = TestableCoreLocationTests;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9548721A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift */,
+				0A9548821A4B35EA0065D9FA /* MutableCLLocationTests.swift */,
 				0A95487F1A4B1C120065D9FA /* ShimMethodForwardingListTests.swift */,
 			);
 			path = Tests;
@@ -139,6 +149,22 @@
 				0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		0A9548841A4B38EE0065D9FA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0A9548851A4B39120065D9FA /* CLLocationCoordinate2DEquatability.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0A9548871A4B39E20065D9FA /* CLLocation */ = {
+			isa = PBXGroup;
+			children = (
+				0A9548881A4B39F30065D9FA /* CLLocation.swift */,
+			);
+			path = CLLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +277,7 @@
 				0A9548761A4A9EA80065D9FA /* CLLocationManager.swift in Sources */,
 				0A95487D1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */,
 				0A9548791A4A9F090065D9FA /* CLLocationManagerCalls.swift in Sources */,
+				0A9548891A4B39F30065D9FA /* CLLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +287,12 @@
 			files = (
 				0A9548811A4B1C120065D9FA /* ShimMethodForwardingListTests.swift in Sources */,
 				0A9548731A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift in Sources */,
+				0A9548831A4B35EA0065D9FA /* MutableCLLocationTests.swift in Sources */,
+				0A95488A1A4B3DE30065D9FA /* CLLocation.swift in Sources */,
 				0A95487A1A4A9F090065D9FA /* CLLocationManagerCalls.swift in Sources */,
 				0A95487E1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */,
 				0A9548771A4A9EA80065D9FA /* CLLocationManager.swift in Sources */,
+				0A9548861A4B39120065D9FA /* CLLocationCoordinate2DEquatability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
