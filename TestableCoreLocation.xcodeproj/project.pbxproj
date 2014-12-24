@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A95485B1A4A9CD80065D9FA /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9548611A4A9CD80065D9FA /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9548551A4A9CD80065D9FA /* TestableCoreLocation.framework */; };
-		0A9548681A4A9CD80065D9FA /* TestableCoreLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548671A4A9CD80065D9FA /* TestableCoreLocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +27,6 @@
 		0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0A9548601A4A9CD80065D9FA /* TestableCoreLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestableCoreLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9548661A4A9CD80065D9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A9548671A4A9CD80065D9FA /* TestableCoreLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableCoreLocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +69,8 @@
 		0A9548571A4A9CD80065D9FA /* TestableCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */,
 				0A9548581A4A9CD80065D9FA /* Supporting Files */,
+				0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */,
 			);
 			path = TestableCoreLocation;
 			sourceTree = "<group>";
@@ -88,7 +86,6 @@
 		0A9548641A4A9CD80065D9FA /* TestableCoreLocationTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A9548671A4A9CD80065D9FA /* TestableCoreLocationTests.swift */,
 				0A9548651A4A9CD80065D9FA /* Supporting Files */,
 			);
 			path = TestableCoreLocationTests;
@@ -216,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A9548681A4A9CD80065D9FA /* TestableCoreLocationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
