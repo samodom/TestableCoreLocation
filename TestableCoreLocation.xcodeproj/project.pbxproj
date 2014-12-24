@@ -29,6 +29,9 @@
 		0A9548951A4B62230065D9FA /* MutableCLVisitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548941A4B62230065D9FA /* MutableCLVisitTests.swift */; };
 		0A9548981A4B64450065D9FA /* CLVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548971A4B64450065D9FA /* CLVisit.swift */; };
 		0A9548991A4B64450065D9FA /* CLVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548971A4B64450065D9FA /* CLVisit.swift */; };
+		0A95489B1A4B67910065D9FA /* MutableCLFloorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95489A1A4B67910065D9FA /* MutableCLFloorTests.swift */; };
+		0A95489E1A4B69220065D9FA /* CLFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95489D1A4B69220065D9FA /* CLFloor.swift */; };
+		0A95489F1A4B69260065D9FA /* CLFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95489D1A4B69220065D9FA /* CLFloor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,8 @@
 		0A9548911A4B4F4E0065D9FA /* CLHeading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHeading.swift; sourceTree = "<group>"; };
 		0A9548941A4B62230065D9FA /* MutableCLVisitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableCLVisitTests.swift; sourceTree = "<group>"; };
 		0A9548971A4B64450065D9FA /* CLVisit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVisit.swift; sourceTree = "<group>"; };
+		0A95489A1A4B67910065D9FA /* MutableCLFloorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableCLFloorTests.swift; sourceTree = "<group>"; };
+		0A95489D1A4B69220065D9FA /* CLFloor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFloor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,7 @@
 		0A9548571A4A9CD80065D9FA /* TestableCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
+				0A95489C1A4B69140065D9FA /* CLFloor */,
 				0A95488D1A4B4E460065D9FA /* CLHeading */,
 				0A9548871A4B39E20065D9FA /* CLLocation */,
 				0A9548741A4A9E8F0065D9FA /* CLLocationManager */,
@@ -143,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9548721A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift */,
+				0A95489A1A4B67910065D9FA /* MutableCLFloorTests.swift */,
 				0A95488B1A4B4D9F0065D9FA /* MutableCLHeadingTests.swift */,
 				0A9548821A4B35EA0065D9FA /* MutableCLLocationTests.swift */,
 				0A9548941A4B62230065D9FA /* MutableCLVisitTests.swift */,
@@ -199,6 +206,14 @@
 				0A9548971A4B64450065D9FA /* CLVisit.swift */,
 			);
 			path = CLVisit;
+			sourceTree = "<group>";
+		};
+		0A95489C1A4B69140065D9FA /* CLFloor */ = {
+			isa = PBXGroup;
+			children = (
+				0A95489D1A4B69220065D9FA /* CLFloor.swift */,
+			);
+			path = CLFloor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9548761A4A9EA80065D9FA /* CLLocationManager.swift in Sources */,
+				0A95489E1A4B69220065D9FA /* CLFloor.swift in Sources */,
 				0A9548921A4B4F4E0065D9FA /* CLHeading.swift in Sources */,
 				0A95488F1A4B4E750065D9FA /* CLHeadingComponentValues3D.swift in Sources */,
 				0A9548981A4B64450065D9FA /* CLVisit.swift in Sources */,
@@ -324,7 +340,9 @@
 			files = (
 				0A9548991A4B64450065D9FA /* CLVisit.swift in Sources */,
 				0A95488C1A4B4D9F0065D9FA /* MutableCLHeadingTests.swift in Sources */,
+				0A95489B1A4B67910065D9FA /* MutableCLFloorTests.swift in Sources */,
 				0A9548811A4B1C120065D9FA /* ShimMethodForwardingListTests.swift in Sources */,
+				0A95489F1A4B69260065D9FA /* CLFloor.swift in Sources */,
 				0A9548731A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift in Sources */,
 				0A9548951A4B62230065D9FA /* MutableCLVisitTests.swift in Sources */,
 				0A9548831A4B35EA0065D9FA /* MutableCLLocationTests.swift in Sources */,
@@ -521,6 +539,7 @@
 				0A95486D1A4A9CD80065D9FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A95486E1A4A9CD80065D9FA /* Build configuration list for PBXNativeTarget "TestableCoreLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +548,7 @@
 				0A9548701A4A9CD80065D9FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

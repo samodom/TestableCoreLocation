@@ -47,7 +47,7 @@ public class CLLocation: CoreLocation.CLLocation {
     /*!
         Mutable override of the `floor` property.
     */
-    public override var floor: CLFloor? {
+    public override var floor: CoreLocation.CLFloor? {
         get {
             if floorOverride != nil {
                 return floorOverride!
@@ -166,7 +166,7 @@ public class CLLocation: CoreLocation.CLLocation {
 
     private var coordinateOverride: CLLocationCoordinate2D?
     private var altitudeOverride: CLLocationDistance?
-    private var floorOverride: CLFloor?
+    private var floorOverride: CoreLocation.CLFloor?
     private var horizontalAccuracyOverride: CLLocationAccuracy?
     private var verticalAccuracyOverride: CLLocationAccuracy?
     private var timestampOverride: NSDate?

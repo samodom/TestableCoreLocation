@@ -14,7 +14,7 @@ class MutableCLLocationTests: XCTestCase {
     var location: CLLocation!
     let coordinate = CLLocationCoordinate2D(latitude: 12.123456, longitude: -24.654321)
     let altitude = CLLocationDistance(99.99)
-    let floor = CLFloor()
+    let floor = CoreLocation.CLFloor()
     let horizontalAccuracy = CLLocationAccuracy(14.42)
     let verticalAccuracy = CLLocationAccuracy(5.55)
     let timestamp = NSDate()
