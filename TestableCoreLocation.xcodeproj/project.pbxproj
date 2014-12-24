@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0A95485B1A4A9CD80065D9FA /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9548611A4A9CD80065D9FA /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9548551A4A9CD80065D9FA /* TestableCoreLocation.framework */; };
+		0A9548731A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548721A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift */; };
+		0A9548761A4A9EA80065D9FA /* CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548751A4A9EA80065D9FA /* CLLocationManager.swift */; };
+		0A9548771A4A9EA80065D9FA /* CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548751A4A9EA80065D9FA /* CLLocationManager.swift */; };
+		0A9548791A4A9F090065D9FA /* CLLocationManagerCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548781A4A9F090065D9FA /* CLLocationManagerCalls.swift */; };
+		0A95487A1A4A9F090065D9FA /* CLLocationManagerCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548781A4A9F090065D9FA /* CLLocationManagerCalls.swift */; };
+		0A95487D1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */; };
+		0A95487E1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */; };
+		0A9548811A4B1C120065D9FA /* ShimMethodForwardingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95487F1A4B1C120065D9FA /* ShimMethodForwardingListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,11 @@
 		0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0A9548601A4A9CD80065D9FA /* TestableCoreLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestableCoreLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9548661A4A9CD80065D9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9548721A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerCallsTests.swift; sourceTree = "<group>"; };
+		0A9548751A4A9EA80065D9FA /* CLLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
+		0A9548781A4A9F090065D9FA /* CLLocationManagerCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerCalls.swift; sourceTree = "<group>"; };
+		0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimMethodForwarding.swift; sourceTree = "<group>"; };
+		0A95487F1A4B1C120065D9FA /* ShimMethodForwardingListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimMethodForwardingListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +82,10 @@
 		0A9548571A4A9CD80065D9FA /* TestableCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
+				0A9548741A4A9E8F0065D9FA /* CLLocationManager */,
 				0A9548581A4A9CD80065D9FA /* Supporting Files */,
 				0A95485A1A4A9CD80065D9FA /* TestableCoreLocation.h */,
+				0A95487B1A4AA0940065D9FA /* Tools */,
 			);
 			path = TestableCoreLocation;
 			sourceTree = "<group>";
@@ -87,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9548651A4A9CD80065D9FA /* Supporting Files */,
+				0A9548711A4A9D2C0065D9FA /* Tests */,
 			);
 			path = TestableCoreLocationTests;
 			sourceTree = "<group>";
@@ -97,6 +113,32 @@
 				0A9548661A4A9CD80065D9FA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9548711A4A9D2C0065D9FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A9548721A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift */,
+				0A95487F1A4B1C120065D9FA /* ShimMethodForwardingListTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0A9548741A4A9E8F0065D9FA /* CLLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A9548751A4A9EA80065D9FA /* CLLocationManager.swift */,
+				0A9548781A4A9F090065D9FA /* CLLocationManagerCalls.swift */,
+			);
+			path = CLLocationManager;
+			sourceTree = "<group>";
+		};
+		0A95487B1A4AA0940065D9FA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0A95487C1A4AA0940065D9FA /* ShimMethodForwarding.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9548761A4A9EA80065D9FA /* CLLocationManager.swift in Sources */,
+				0A95487D1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */,
+				0A9548791A4A9F090065D9FA /* CLLocationManagerCalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9548811A4B1C120065D9FA /* ShimMethodForwardingListTests.swift in Sources */,
+				0A9548731A4A9DA30065D9FA /* CLLocationManagerCallsTests.swift in Sources */,
+				0A95487A1A4A9F090065D9FA /* CLLocationManagerCalls.swift in Sources */,
+				0A95487E1A4AA0940065D9FA /* ShimMethodForwarding.swift in Sources */,
+				0A9548771A4A9EA80065D9FA /* CLLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,25 +365,30 @@
 		0A95486C1A4A9CD80065D9FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TestableCoreLocation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0A95486D1A4A9CD80065D9FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TestableCoreLocation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -345,6 +400,7 @@
 		0A95486F1A4A9CD80065D9FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -356,12 +412,14 @@
 				INFOPLIST_FILE = TestableCoreLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0A9548701A4A9CD80065D9FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
