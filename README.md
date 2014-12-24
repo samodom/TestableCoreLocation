@@ -8,7 +8,9 @@ This is a framework that uses the same class names as some classes from CoreLoca
 - `CLLocationManager`
   - [Capturing instance calls](CLLocationManager.md)
 
+
 #### Mutable Immutables
 
 - `CLHeading`
 - `CLLocation`
+- `CLVisit`
