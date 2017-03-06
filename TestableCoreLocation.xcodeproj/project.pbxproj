@@ -25,6 +25,7 @@
 		0A3A10931E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10921E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift */; };
 		0A3A10951E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10941E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift */; };
 		0A3A10971E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10961E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift */; };
+		0A3A109D1E6E1A5F00B81B32 /* SampleValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A109C1E6E1A5F00B81B32 /* SampleValues.swift */; };
 		0AFECA571E6D25AF006BD0EF /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */; };
 		0AFECA5E1E6D25AF006BD0EF /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */; };
@@ -62,6 +63,7 @@
 		0A3A10921E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStopMonitoringVisitsSpy.swift; sourceTree = "<group>"; };
 		0A3A10941E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerAllowDeferredLocationUpdatesSpy.swift; sourceTree = "<group>"; };
 		0A3A10961E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift; sourceTree = "<group>"; };
+		0A3A109C1E6E1A5F00B81B32 /* SampleValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleValues.swift; sourceTree = "<group>"; };
 		0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableCoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0AFECA511E6D25AF006BD0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		0AFECA6A1E6D2991006BD0EF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0A3A109C1E6E1A5F00B81B32 /* SampleValues.swift */,
 				0AFECA6B1E6D29A3006BD0EF /* TestLocationManager.swift */,
 			);
 			path = Tools;
@@ -423,6 +426,7 @@
 			files = (
 				0AFECA6C1E6D29A3006BD0EF /* TestLocationManager.swift in Sources */,
 				0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */,
+				0A3A109D1E6E1A5F00B81B32 /* SampleValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
