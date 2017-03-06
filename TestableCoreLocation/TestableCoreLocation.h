@@ -2,8 +2,8 @@
 //  TestableCoreLocation.h
 //  TestableCoreLocation
 //
-//  Created by Sam Odom on 12/24/14.
-//  Copyright (c) 2014 Swagger Soft. All rights reserved.
+//  Created by Sam Odom on 3/5/17.
+//  Copyright © 2017 Swagger Soft. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

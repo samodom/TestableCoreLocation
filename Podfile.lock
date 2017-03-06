@@ -1,0 +1,19 @@
+PODS:
+  - FoundationSwagger (0.2.13)
+  - TestableUIKit (0.2.1):
+    - TestSwagger
+  - TestSwagger (0.1.5):
+    - FoundationSwagger
+
+DEPENDENCIES:
+  - TestableUIKit
+  - TestSwagger
+
+SPEC CHECKSUMS:
+  FoundationSwagger: 7cbf965cfeab4b8064b4913369b9ec4d991793a3
+  TestableUIKit: 4ea91c219e275cd784affd585ba40f32edd59d92
+  TestSwagger: 2a6ef3a750e269d2d7a256877995796e54d499b6
+
+PODFILE CHECKSUM: aa1c1a4280ca8ca0c2372b178b004ad8a7394401
+
+COCOAPODS: 1.2.0
