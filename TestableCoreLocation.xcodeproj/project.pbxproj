@@ -7,8 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3A10751E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10741E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift */; };
+		0A3A10771E6DFC6300B81B32 /* CLLocationManagerRequestAlwaysAuthorizationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10761E6DFC6300B81B32 /* CLLocationManagerRequestAlwaysAuthorizationSpy.swift */; };
+		0A3A10791E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10781E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift */; };
+		0A3A107B1E6DFDB900B81B32 /* CLLocationManagerStartUpdatingLocationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A107A1E6DFDB900B81B32 /* CLLocationManagerStartUpdatingLocationSpy.swift */; };
+		0A3A107D1E6DFE4A00B81B32 /* CLLocationManagerStopUpdatingLocationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A107C1E6DFE4A00B81B32 /* CLLocationManagerStopUpdatingLocationSpy.swift */; };
+		0A3A107F1E6DFF0900B81B32 /* CLLocationManagerStartUpdatingHeadingSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A107E1E6DFF0900B81B32 /* CLLocationManagerStartUpdatingHeadingSpy.swift */; };
+		0A3A10811E6DFF5700B81B32 /* CLLocationManagerStopUpdatingHeadingSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10801E6DFF5700B81B32 /* CLLocationManagerStopUpdatingHeadingSpy.swift */; };
+		0A3A10831E6E00B200B81B32 /* CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10821E6E00B200B81B32 /* CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift */; };
+		0A3A10851E6E019300B81B32 /* CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10841E6E019300B81B32 /* CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift */; };
+		0A3A10871E6E027100B81B32 /* CLLocationManagerStopMonitoringSignificantLocationChangesSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10861E6E027100B81B32 /* CLLocationManagerStopMonitoringSignificantLocationChangesSpy.swift */; };
+		0A3A10891E6E040300B81B32 /* CLLocationManagerStartMonitoringForRegionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10881E6E040300B81B32 /* CLLocationManagerStartMonitoringForRegionSpy.swift */; };
+		0A3A108B1E6E05F900B81B32 /* CLLocationManagerStopMonitoringForRegionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A108A1E6E05F900B81B32 /* CLLocationManagerStopMonitoringForRegionSpy.swift */; };
+		0A3A108D1E6E06D900B81B32 /* CLLocationManagerStartRangingBeaconsInRegionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A108C1E6E06D900B81B32 /* CLLocationManagerStartRangingBeaconsInRegionSpy.swift */; };
+		0A3A108F1E6E07C000B81B32 /* CLLocationManagerStopRangingBeaconsInRegionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A108E1E6E07C000B81B32 /* CLLocationManagerStopRangingBeaconsInRegionSpy.swift */; };
+		0A3A10911E6E086700B81B32 /* CLLocationManagerStartMonitoringVisitsSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10901E6E086700B81B32 /* CLLocationManagerStartMonitoringVisitsSpy.swift */; };
+		0A3A10931E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10921E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift */; };
+		0A3A10951E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10941E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift */; };
+		0A3A10971E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10961E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift */; };
 		0AFECA571E6D25AF006BD0EF /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */; };
 		0AFECA5E1E6D25AF006BD0EF /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */; };
+		0AFECA6C1E6D29A3006BD0EF /* TestLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFECA6B1E6D29A3006BD0EF /* TestLocationManager.swift */; };
 		3F190D5981A7DCF8E133A19C /* Pods_TestableCoreLocationWorkspace_TestableCoreLocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860C6FFCC188ECF5D64DCB9 /* Pods_TestableCoreLocationWorkspace_TestableCoreLocationTests.framework */; };
 		BE9E5AE382BC4D6EDE6F1450 /* Pods_TestableCoreLocationWorkspace_TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC233585156E84165C911EA /* Pods_TestableCoreLocationWorkspace_TestableCoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -24,11 +44,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3A10741E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerRequestWhenInUseAuthorizationSpy.swift; sourceTree = "<group>"; };
+		0A3A10761E6DFC6300B81B32 /* CLLocationManagerRequestAlwaysAuthorizationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerRequestAlwaysAuthorizationSpy.swift; sourceTree = "<group>"; };
+		0A3A10781E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerObjectSpyable.swift; sourceTree = "<group>"; };
+		0A3A107A1E6DFDB900B81B32 /* CLLocationManagerStartUpdatingLocationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStartUpdatingLocationSpy.swift; sourceTree = "<group>"; };
+		0A3A107C1E6DFE4A00B81B32 /* CLLocationManagerStopUpdatingLocationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStopUpdatingLocationSpy.swift; sourceTree = "<group>"; };
+		0A3A107E1E6DFF0900B81B32 /* CLLocationManagerStartUpdatingHeadingSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStartUpdatingHeadingSpy.swift; sourceTree = "<group>"; };
+		0A3A10801E6DFF5700B81B32 /* CLLocationManagerStopUpdatingHeadingSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStopUpdatingHeadingSpy.swift; sourceTree = "<group>"; };
+		0A3A10821E6E00B200B81B32 /* CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift; sourceTree = "<group>"; };
+		0A3A10841E6E019300B81B32 /* CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift; sourceTree = "<group>"; };
+		0A3A10861E6E027100B81B32 /* CLLocationManagerStopMonitoringSignificantLocationChangesSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStopMonitoringSignificantLocationChangesSpy.swift; sourceTree = "<group>"; };
+		0A3A10881E6E040300B81B32 /* CLLocationManagerStartMonitoringForRegionSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStartMonitoringForRegionSpy.swift; sourceTree = "<group>"; };
+		0A3A108A1E6E05F900B81B32 /* CLLocationManagerStopMonitoringForRegionSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStopMonitoringForRegionSpy.swift; sourceTree = "<group>"; };
+		0A3A108C1E6E06D900B81B32 /* CLLocationManagerStartRangingBeaconsInRegionSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStartRangingBeaconsInRegionSpy.swift; sourceTree = "<group>"; };
+		0A3A108E1E6E07C000B81B32 /* CLLocationManagerStopRangingBeaconsInRegionSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStopRangingBeaconsInRegionSpy.swift; sourceTree = "<group>"; };
+		0A3A10901E6E086700B81B32 /* CLLocationManagerStartMonitoringVisitsSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStartMonitoringVisitsSpy.swift; sourceTree = "<group>"; };
+		0A3A10921E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerStopMonitoringVisitsSpy.swift; sourceTree = "<group>"; };
+		0A3A10941E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerAllowDeferredLocationUpdatesSpy.swift; sourceTree = "<group>"; };
+		0A3A10961E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift; sourceTree = "<group>"; };
 		0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableCoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0AFECA511E6D25AF006BD0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AFECA561E6D25AF006BD0EF /* TestableCoreLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestableCoreLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFECA5D1E6D25AF006BD0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerSpiesTests.swift; sourceTree = "<group>"; };
+		0AFECA6B1E6D29A3006BD0EF /* TestLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLocationManager.swift; sourceTree = "<group>"; };
 		1860C6FFCC188ECF5D64DCB9 /* Pods_TestableCoreLocationWorkspace_TestableCoreLocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestableCoreLocationWorkspace_TestableCoreLocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA96F18F0F8A10CEC564361 /* Pods-TestableCoreLocationWorkspace-TestableCoreLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestableCoreLocationWorkspace-TestableCoreLocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestableCoreLocationWorkspace-TestableCoreLocation/Pods-TestableCoreLocationWorkspace-TestableCoreLocation.debug.xcconfig"; sourceTree = "<group>"; };
 		62F2EA682691453A47983397 /* Pods-TestableCoreLocationWorkspace-TestableCoreLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestableCoreLocationWorkspace-TestableCoreLocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestableCoreLocationWorkspace-TestableCoreLocation/Pods-TestableCoreLocationWorkspace-TestableCoreLocation.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +98,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3A10731E6DFA8700B81B32 /* CLLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A3A10941E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift */,
+				0A3A10961E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift */,
+				0A3A10821E6E00B200B81B32 /* CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift */,
+				0A3A10781E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift */,
+				0A3A10761E6DFC6300B81B32 /* CLLocationManagerRequestAlwaysAuthorizationSpy.swift */,
+				0A3A10741E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift */,
+				0A3A10881E6E040300B81B32 /* CLLocationManagerStartMonitoringForRegionSpy.swift */,
+				0A3A10841E6E019300B81B32 /* CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift */,
+				0A3A10901E6E086700B81B32 /* CLLocationManagerStartMonitoringVisitsSpy.swift */,
+				0A3A108C1E6E06D900B81B32 /* CLLocationManagerStartRangingBeaconsInRegionSpy.swift */,
+				0A3A107E1E6DFF0900B81B32 /* CLLocationManagerStartUpdatingHeadingSpy.swift */,
+				0A3A107A1E6DFDB900B81B32 /* CLLocationManagerStartUpdatingLocationSpy.swift */,
+				0A3A108A1E6E05F900B81B32 /* CLLocationManagerStopMonitoringForRegionSpy.swift */,
+				0A3A10861E6E027100B81B32 /* CLLocationManagerStopMonitoringSignificantLocationChangesSpy.swift */,
+				0A3A10921E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift */,
+				0A3A108E1E6E07C000B81B32 /* CLLocationManagerStopRangingBeaconsInRegionSpy.swift */,
+				0A3A10801E6DFF5700B81B32 /* CLLocationManagerStopUpdatingHeadingSpy.swift */,
+				0A3A107C1E6DFE4A00B81B32 /* CLLocationManagerStopUpdatingLocationSpy.swift */,
+			);
+			path = CLLocationManager;
+			sourceTree = "<group>";
+		};
 		0AFECA431E6D25AF006BD0EF = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +146,9 @@
 		0AFECA4F1E6D25AF006BD0EF /* TestableCoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */,
+				0A3A10731E6DFA8700B81B32 /* CLLocationManager */,
 				0AFECA511E6D25AF006BD0EF /* Info.plist */,
+				0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */,
 			);
 			path = TestableCoreLocation;
 			sourceTree = "<group>";
@@ -91,8 +157,26 @@
 			isa = PBXGroup;
 			children = (
 				0AFECA5D1E6D25AF006BD0EF /* Info.plist */,
+				0AFECA671E6D279B006BD0EF /* Tests */,
+				0AFECA6A1E6D2991006BD0EF /* Tools */,
 			);
 			path = TestableCoreLocationTests;
+			sourceTree = "<group>";
+		};
+		0AFECA671E6D279B006BD0EF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0AFECA6A1E6D2991006BD0EF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0AFECA6B1E6D29A3006BD0EF /* TestLocationManager.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		878FEF8A3F81AE523F46C866 /* Pods */ = {
@@ -183,11 +267,13 @@
 					0AFECA4C1E6D25AF006BD0EF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = QW3T4F66DC;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					0AFECA551E6D25AF006BD0EF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = QW3T4F66DC;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,6 +396,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3A108F1E6E07C000B81B32 /* CLLocationManagerStopRangingBeaconsInRegionSpy.swift in Sources */,
+				0A3A10951E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift in Sources */,
+				0A3A107B1E6DFDB900B81B32 /* CLLocationManagerStartUpdatingLocationSpy.swift in Sources */,
+				0A3A10851E6E019300B81B32 /* CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift in Sources */,
+				0A3A10751E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift in Sources */,
+				0A3A107F1E6DFF0900B81B32 /* CLLocationManagerStartUpdatingHeadingSpy.swift in Sources */,
+				0A3A107D1E6DFE4A00B81B32 /* CLLocationManagerStopUpdatingLocationSpy.swift in Sources */,
+				0A3A10931E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift in Sources */,
+				0A3A10791E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift in Sources */,
+				0A3A108B1E6E05F900B81B32 /* CLLocationManagerStopMonitoringForRegionSpy.swift in Sources */,
+				0A3A10971E6E13BD00B81B32 /* CLLocationManagerDisallowDeferredLocationUpdatesSpy.swift in Sources */,
+				0A3A10811E6DFF5700B81B32 /* CLLocationManagerStopUpdatingHeadingSpy.swift in Sources */,
+				0A3A10871E6E027100B81B32 /* CLLocationManagerStopMonitoringSignificantLocationChangesSpy.swift in Sources */,
+				0A3A108D1E6E06D900B81B32 /* CLLocationManagerStartRangingBeaconsInRegionSpy.swift in Sources */,
+				0A3A10831E6E00B200B81B32 /* CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift in Sources */,
+				0A3A10891E6E040300B81B32 /* CLLocationManagerStartMonitoringForRegionSpy.swift in Sources */,
+				0A3A10771E6DFC6300B81B32 /* CLLocationManagerRequestAlwaysAuthorizationSpy.swift in Sources */,
+				0A3A10911E6E086700B81B32 /* CLLocationManagerStartMonitoringVisitsSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFECA6C1E6D29A3006BD0EF /* TestLocationManager.swift in Sources */,
+				0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1EA96F18F0F8A10CEC564361 /* Pods-TestableCoreLocationWorkspace-TestableCoreLocation.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QW3T4F66DC;
@@ -446,6 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samodom.TestableCoreLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -454,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62F2EA682691453A47983397 /* Pods-TestableCoreLocationWorkspace-TestableCoreLocation.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QW3T4F66DC;
@@ -474,11 +583,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C2BAFA2621F633D672DEC47E /* Pods-TestableCoreLocationWorkspace-TestableCoreLocationTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QW3T4F66DC;
 				INFOPLIST_FILE = TestableCoreLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samodom.TestableCoreLocationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -487,6 +599,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96DFD0D18600B444BA053D5E /* Pods-TestableCoreLocationWorkspace-TestableCoreLocationTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QW3T4F66DC;
 				INFOPLIST_FILE = TestableCoreLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
