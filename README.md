@@ -2,15 +2,13 @@ TestableCoreLocation
 ====================
 
 
-#### Method spies
+## Spies
 
-- `CLLocationManager`
-  - [Capturing instance calls](CLLocationManager.md)
+* [`CLLocationManager`](Docs/CLLocationManagerSpies.md)
 
 
-#### Mutable Immutables
+## Testing subclasses
 
-- `CLFloor`
-- `CLHeading`
-- `CLLocation`
-- `CLVisit`
+* [`MutableFloor`](Docs/MutableFloor.md)
+* [`MutableHeading`](Docs/MutableHeading.md)
+* [`MutableVisit`](Docs/MutableVisit.md)

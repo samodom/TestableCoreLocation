@@ -17,4 +17,4 @@ class MutableHeading: CLHeading {
 }
 ```
 
-The initializer creates a mutable heading values with all-zero values for its properties (except that `timestamp` is set to the current timestamp).
+The initializer creates a mutable heading with all-zero values for its properties (except that `timestamp` is set to the current timestamp).

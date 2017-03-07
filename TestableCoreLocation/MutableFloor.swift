@@ -12,11 +12,11 @@ import CoreLocation
 /// Mutable subclass of `CLFloor` to be used for testing purposes.
 open class MutableFloor: CLFloor {
 
-    /// Mutable level on a floor
+    /// Mutable level on a floor.
     private final var _level: Int
     open override var level: Int {
         get {
-            return _level // == .min ? super.level : _level
+            return _level
         }
         set {
             _level = newValue
@@ -29,13 +29,13 @@ open class MutableFloor: CLFloor {
     }
     
     public required init?(coder: NSCoder) {
-        _level = coder.decodeInteger(forKey: MutableFloor.levelSerializationKey)
+        _level = coder.decodeInteger(forKey: MutableFloor.levelEncodingKey)
         super.init(coder: coder)
     }
 
-    private static let levelSerializationKey = "_level"
+    private static let levelEncodingKey = "_level"
     open override func encode(with coder: NSCoder) {
-        coder.encode(_level, forKey: MutableFloor.levelSerializationKey)
+        coder.encode(level, forKey: MutableFloor.levelEncodingKey)
     }
 
 }

@@ -32,12 +32,7 @@ class MutableFloorTests: XCTestCase {
     }
 
     func testInvalidMutableFloorSerialization() {
-        let data = NSKeyedArchiver.archivedData(
-            withRootObject: CLLocation(
-                latitude: SampleCoordinate.latitude,
-                longitude: SampleCoordinate.longitude
-            )
-        )
+        let data = NSKeyedArchiver.archivedData(withRootObject: SampleLocation)
         let anotherFloor = NSKeyedUnarchiver.unarchiveObject(with: data) as? MutableFloor
         XCTAssertNil(anotherFloor,
                      "Should not be able to deserialize some other object as a mutable floor")

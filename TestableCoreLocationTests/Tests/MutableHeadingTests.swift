@@ -85,12 +85,7 @@ class MutableHeadingTests: XCTestCase {
 
 
     func testInvalidMutableHeadingSerialization() {
-        let data = NSKeyedArchiver.archivedData(
-            withRootObject: CLLocation(
-                latitude: SampleCoordinate.latitude,
-                longitude: SampleCoordinate.longitude
-            )
-        )
+        let data = NSKeyedArchiver.archivedData(withRootObject: SampleLocation)
         let anotherHeading = NSKeyedUnarchiver.unarchiveObject(with: data) as? MutableHeading
         XCTAssertNil(anotherHeading,
                      "Should not be able to deserialize some other object as a mutable heading")
