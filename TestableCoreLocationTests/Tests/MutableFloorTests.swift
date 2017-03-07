@@ -31,14 +31,7 @@ class MutableFloorTests: XCTestCase {
         XCTAssertEqual(floor.level, 42, "Should be able to change the level of a floor")
     }
 
-    func testInvalidMutableFloorSerialization() {
-        let data = NSKeyedArchiver.archivedData(withRootObject: SampleLocation)
-        let anotherFloor = NSKeyedUnarchiver.unarchiveObject(with: data) as? MutableFloor
-        XCTAssertNil(anotherFloor,
-                     "Should not be able to deserialize some other object as a mutable floor")
-    }
-
-    func testValidMutableFloorSerialization() {
+    func testMutableFloorSerialization() {
         let data = NSKeyedArchiver.archivedData(withRootObject: floor)
         let anotherFloor = NSKeyedUnarchiver.unarchiveObject(with: data) as? CLFloor
         XCTAssertEqual(anotherFloor!.level, 14,

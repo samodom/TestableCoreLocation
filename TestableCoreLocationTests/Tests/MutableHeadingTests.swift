@@ -83,15 +83,7 @@ class MutableHeadingTests: XCTestCase {
                        "Should be able to change the z-heading-component of a mutable heading")
     }
 
-
-    func testInvalidMutableHeadingSerialization() {
-        let data = NSKeyedArchiver.archivedData(withRootObject: SampleLocation)
-        let anotherHeading = NSKeyedUnarchiver.unarchiveObject(with: data) as? MutableHeading
-        XCTAssertNil(anotherHeading,
-                     "Should not be able to deserialize some other object as a mutable heading")
-    }
-
-    func testValidMutableHeadingSerialization() {
+    func testMutableHeadingSerialization() {
         mutableHeading.magneticHeading = 12
         mutableHeading.trueHeading = 34
         mutableHeading.headingAccuracy = 56
@@ -117,6 +109,5 @@ class MutableHeadingTests: XCTestCase {
         XCTAssertEqual(anotherHeading!.z, 3,
                        "Should be able to serialize and deserialize a mutable heading")
     }
-
 
 }

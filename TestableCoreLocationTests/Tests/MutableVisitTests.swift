@@ -91,14 +91,7 @@ class MutableVisitTests: XCTestCase {
                        "Should not be able to set the arrival date to a value after the departure date")
     }
 
-    func testInvalidMutableVisitSerialization() {
-        let data = NSKeyedArchiver.archivedData(withRootObject: SampleLocation)
-        let anotherVisit = NSKeyedUnarchiver.unarchiveObject(with: data) as? MutableVisit
-        XCTAssertNil(anotherVisit,
-                     "Should not be able to deserialize some other object as a mutable visit")
-    }
-
-    func testValidMutableVisitSerialization() {
+    func testMutableVisitSerialization() {
         let data = NSKeyedArchiver.archivedData(withRootObject: visit)
         let anotherVisit = NSKeyedUnarchiver.unarchiveObject(with: data) as? CLVisit
         XCTAssertEqual(anotherVisit!.coordinate, SampleCoordinate,

@@ -27,7 +27,7 @@ open class MutableFloor: CLFloor {
         _level = level
         super.init()
     }
-    
+
     public required init?(coder: NSCoder) {
         _level = coder.decodeInteger(forKey: MutableFloor.levelEncodingKey)
         super.init(coder: coder)
