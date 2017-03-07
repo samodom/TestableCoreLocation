@@ -33,6 +33,8 @@
 		0A3A10A31E6E44CA00B81B32 /* MutableVisitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10A21E6E44CA00B81B32 /* MutableVisitTests.swift */; };
 		0A3A10A51E6E475600B81B32 /* MutableVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10A41E6E475600B81B32 /* MutableVisit.swift */; };
 		0A3A10A71E6E4DD300B81B32 /* TestEquatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10A61E6E4DD300B81B32 /* TestEquatability.swift */; };
+		0A3A10A91E6E599300B81B32 /* MutableLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10A81E6E599300B81B32 /* MutableLocationTests.swift */; };
+		0A3A10AB1E6E5B7400B81B32 /* MutableLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A10AA1E6E5B7400B81B32 /* MutableLocation.swift */; };
 		0AFECA571E6D25AF006BD0EF /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */; };
 		0AFECA5E1E6D25AF006BD0EF /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */; };
@@ -78,6 +80,8 @@
 		0A3A10A21E6E44CA00B81B32 /* MutableVisitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableVisitTests.swift; sourceTree = "<group>"; };
 		0A3A10A41E6E475600B81B32 /* MutableVisit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableVisit.swift; sourceTree = "<group>"; };
 		0A3A10A61E6E4DD300B81B32 /* TestEquatability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEquatability.swift; sourceTree = "<group>"; };
+		0A3A10A81E6E599300B81B32 /* MutableLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableLocationTests.swift; sourceTree = "<group>"; };
+		0A3A10AA1E6E5B7400B81B32 /* MutableLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableLocation.swift; sourceTree = "<group>"; };
 		0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableCoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0AFECA511E6D25AF006BD0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				0AFECA511E6D25AF006BD0EF /* Info.plist */,
 				0A3A109A1E6E168600B81B32 /* MutableFloor.swift */,
 				0A3A10A01E6E223D00B81B32 /* MutableHeading.swift */,
+				0A3A10AA1E6E5B7400B81B32 /* MutableLocation.swift */,
 				0A3A10A41E6E475600B81B32 /* MutableVisit.swift */,
 				0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */,
 			);
@@ -188,6 +193,7 @@
 				0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */,
 				0A3A10981E6E15CF00B81B32 /* MutableFloorTests.swift */,
 				0A3A109E1E6E1F0400B81B32 /* MutableHeadingTests.swift */,
+				0A3A10A81E6E599300B81B32 /* MutableLocationTests.swift */,
 				0A3A10A21E6E44CA00B81B32 /* MutableVisitTests.swift */,
 			);
 			path = Tests;
@@ -427,6 +433,7 @@
 				0A3A10751E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift in Sources */,
 				0A3A107F1E6DFF0900B81B32 /* CLLocationManagerStartUpdatingHeadingSpy.swift in Sources */,
 				0A3A107D1E6DFE4A00B81B32 /* CLLocationManagerStopUpdatingLocationSpy.swift in Sources */,
+				0A3A10AB1E6E5B7400B81B32 /* MutableLocation.swift in Sources */,
 				0A3A10931E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift in Sources */,
 				0A3A10791E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift in Sources */,
 				0A3A10A11E6E223D00B81B32 /* MutableHeading.swift in Sources */,
@@ -451,6 +458,7 @@
 				0A3A10A31E6E44CA00B81B32 /* MutableVisitTests.swift in Sources */,
 				0A3A10A71E6E4DD300B81B32 /* TestEquatability.swift in Sources */,
 				0A3A109F1E6E1F0400B81B32 /* MutableHeadingTests.swift in Sources */,
+				0A3A10A91E6E599300B81B32 /* MutableLocationTests.swift in Sources */,
 				0AFECA6C1E6D29A3006BD0EF /* TestLocationManager.swift in Sources */,
 				0A3A10991E6E15CF00B81B32 /* MutableFloorTests.swift in Sources */,
 				0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */,

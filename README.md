@@ -12,3 +12,4 @@ TestableCoreLocation
 * [`MutableFloor`](Docs/MutableFloor.md)
 * [`MutableHeading`](Docs/MutableHeading.md)
 * [`MutableVisit`](Docs/MutableVisit.md)
+* [`MutableLocation`](Docs/MutableLocation.md)
