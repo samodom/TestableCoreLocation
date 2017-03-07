@@ -9,3 +9,9 @@
 import CoreLocation
 
 let SampleCoordinate = CLLocationCoordinate2D(latitude: 12.3456, longitude: 65.4321)
+let OtherCoordinate = CLLocationCoordinate2D(latitude: 65.4321, longitude: 12.3456)
+
+let SampleLocation = CLLocation(
+    latitude: SampleCoordinate.latitude,
+    longitude: SampleCoordinate.longitude
+)
