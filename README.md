@@ -13,3 +13,6 @@ TestableCoreLocation
 * [`MutableHeading`](Docs/MutableHeading.md)
 * [`MutableVisit`](Docs/MutableVisit.md)
 * [`MutableLocation`](Docs/MutableLocation.md)
+* [`MutableBeacon`](Docs/MutableBeacon.md)
+
+> Each of these subclasses are fully serializable.
