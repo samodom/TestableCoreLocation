@@ -17,3 +17,8 @@ TestableCoreLocation
 * [`MutableBeacon`](Docs/MutableBeacon.md)
 
 > Each of these subclasses are fully serializable.
+
+
+## Equatability
+
+* [`CLLocationCoordinate2D`](Docs/CLLocationCoordinate2D.md)

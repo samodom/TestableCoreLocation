@@ -1,8 +1,8 @@
 //
-//  TestEquatability.swift
+//  CLLocationCoordinate2D.swift
 //  TestableCoreLocation
 //
-//  Created by Sam Odom on 3/6/17.
+//  Created by Sam Odom on 3/8/17.
 //  Copyright © 2017 Swagger Soft. All rights reserved.
 //
 
