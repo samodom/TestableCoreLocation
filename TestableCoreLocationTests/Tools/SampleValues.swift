@@ -15,3 +15,9 @@ let SampleLocation = CLLocation(
     latitude: SampleCoordinate.latitude,
     longitude: SampleCoordinate.longitude
 )
+
+let SampleRegion = CLCircularRegion(
+    center: SampleCoordinate,
+    radius: 14,
+    identifier: "sample region"
+)

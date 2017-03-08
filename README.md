@@ -5,6 +5,7 @@ TestableCoreLocation
 ## Spies
 
 * [`CLLocationManager`](Docs/CLLocationManagerSpies.md)
+* [`CLGeocoder`](Docs/CLGeocoderSpies.md)
 
 
 ## Testing subclasses
