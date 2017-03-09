@@ -93,20 +93,20 @@ class MutableHeadingTests: XCTestCase {
         mutableHeading.z = 3
 
         let data = NSKeyedArchiver.archivedData(withRootObject: heading)
-        let anotherHeading = NSKeyedUnarchiver.unarchiveObject(with: data) as? CLHeading
-        XCTAssertEqual(anotherHeading!.magneticHeading, 12,
+        let anotherHeading = NSKeyedUnarchiver.unarchiveObject(with: data) as! CLHeading
+        XCTAssertEqual(anotherHeading.magneticHeading, 12,
                        "Should be able to serialize and deserialize a mutable heading")
-        XCTAssertEqual(anotherHeading!.trueHeading, 34,
+        XCTAssertEqual(anotherHeading.trueHeading, 34,
                        "Should be able to serialize and deserialize a mutable heading")
-        XCTAssertEqual(anotherHeading!.headingAccuracy, 56,
+        XCTAssertEqual(anotherHeading.headingAccuracy, 56,
                        "Should be able to serialize and deserialize a mutable heading")
-        XCTAssertEqual(anotherHeading!.timestamp, now,
+        XCTAssertEqual(anotherHeading.timestamp, now,
                        "Should be able to serialize and deserialize a mutable heading")
-        XCTAssertEqual(anotherHeading!.x, 1,
+        XCTAssertEqual(anotherHeading.x, 1,
                        "Should be able to serialize and deserialize a mutable heading")
-        XCTAssertEqual(anotherHeading!.y, 2,
+        XCTAssertEqual(anotherHeading.y, 2,
                        "Should be able to serialize and deserialize a mutable heading")
-        XCTAssertEqual(anotherHeading!.z, 3,
+        XCTAssertEqual(anotherHeading.z, 3,
                        "Should be able to serialize and deserialize a mutable heading")
     }
 

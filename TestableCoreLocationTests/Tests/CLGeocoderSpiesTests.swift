@@ -84,14 +84,13 @@ class CLGeocoderSpiesTests: XCTestCase {
             completionHandlerInvoked = true
         }
 
-        let dictionary: CLGeocoderAddressDictionary = ["a": "b"]
-        geocoder.geocodeAddressDictionary(dictionary, completionHandler: completion)
+        geocoder.geocodeAddressDictionary(SampleAddressDictionary, completionHandler: completion)
 
         XCTAssertTrue(geocoder.forwardGeocodeAddressCalled,
                       "The geocoder should indicate having been asked to forward-geocode an address")
         XCTAssertEqual(
             geocoder.forwardGeocodeAddressDictionary as! [String: String],
-            dictionary as! [String: String],
+            SampleAddressDictionary as! [String: String],
             "The dictionary should be captured"
         )
         XCTAssertFalse(geocoder.geocodeAddressDictionaryTestMethodCalled,

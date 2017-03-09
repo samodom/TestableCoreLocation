@@ -158,23 +158,23 @@ class MutableLocationTests: XCTestCase {
 
     func testUnmutatedLocationSerialization() {
         let data = NSKeyedArchiver.archivedData(withRootObject: location)
-        let anotherLocation = NSKeyedUnarchiver.unarchiveObject(with: data) as? CLLocation
+        let anotherLocation = NSKeyedUnarchiver.unarchiveObject(with: data) as! CLLocation
 
-        XCTAssertEqual(anotherLocation!.coordinate, SampleCoordinate,
+        XCTAssertEqual(anotherLocation.coordinate, SampleCoordinate,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.altitude, 5280,
+        XCTAssertEqual(anotherLocation.altitude, 5280,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.horizontalAccuracy, 14.42,
+        XCTAssertEqual(anotherLocation.horizontalAccuracy, 14.42,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.verticalAccuracy, 42.14,
+        XCTAssertEqual(anotherLocation.verticalAccuracy, 42.14,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.course, 99.44,
+        XCTAssertEqual(anotherLocation.course, 99.44,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.speed, 10.4,
+        XCTAssertEqual(anotherLocation.speed, 10.4,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.timestamp, now,
+        XCTAssertEqual(anotherLocation.timestamp, now,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertNil(anotherLocation!.floor,
+        XCTAssertNil(anotherLocation.floor,
                        "Should be able to serialize and deserialize a mutable location")
     }
 
@@ -191,23 +191,23 @@ class MutableLocationTests: XCTestCase {
         mutableLocation.floor = floor
 
         let data = NSKeyedArchiver.archivedData(withRootObject: location)
-        let anotherLocation = NSKeyedUnarchiver.unarchiveObject(with: data) as? CLLocation
+        let anotherLocation = NSKeyedUnarchiver.unarchiveObject(with: data) as! CLLocation
 
-        XCTAssertEqual(anotherLocation!.coordinate, OtherCoordinate,
+        XCTAssertEqual(anotherLocation.coordinate, OtherCoordinate,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.altitude, 13.31,
+        XCTAssertEqual(anotherLocation.altitude, 13.31,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.horizontalAccuracy, 18.48,
+        XCTAssertEqual(anotherLocation.horizontalAccuracy, 18.48,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.verticalAccuracy, 2.22,
+        XCTAssertEqual(anotherLocation.verticalAccuracy, 2.22,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.course, -88.5,
+        XCTAssertEqual(anotherLocation.course, -88.5,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.speed, 197.82,
+        XCTAssertEqual(anotherLocation.speed, 197.82,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.timestamp, .distantPast,
+        XCTAssertEqual(anotherLocation.timestamp, .distantPast,
                        "Should be able to serialize and deserialize a mutable location")
-        XCTAssertEqual(anotherLocation!.floor?.level, floor.level,
+        XCTAssertEqual(anotherLocation.floor?.level, floor.level,
                        "Should be able to serialize and deserialize a mutable location")
     }
 

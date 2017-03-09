@@ -72,19 +72,19 @@ class MutableBeaconTests: XCTestCase {
         mutableBeacon.rssi = -9
 
         let data = NSKeyedArchiver.archivedData(withRootObject: beacon)
-        let anotherBeacon = NSKeyedUnarchiver.unarchiveObject(with: data) as? CLBeacon
+        let anotherBeacon = NSKeyedUnarchiver.unarchiveObject(with: data) as! CLBeacon
 
-        XCTAssertEqual(anotherBeacon!.proximityUUID, uuid,
+        XCTAssertEqual(anotherBeacon.proximityUUID, uuid,
                        "Should be able to serialize and deserialize a mutable beacon")
-        XCTAssertEqual(anotherBeacon!.major, 14,
+        XCTAssertEqual(anotherBeacon.major, 14,
                        "Should be able to serialize and deserialize a mutable beacon")
-        XCTAssertEqual(anotherBeacon!.minor, 42,
+        XCTAssertEqual(anotherBeacon.minor, 42,
                        "Should be able to serialize and deserialize a mutable beacon")
-        XCTAssertEqual(anotherBeacon!.proximity, .near,
+        XCTAssertEqual(anotherBeacon.proximity, .near,
                        "Should be able to serialize and deserialize a mutable beacon")
-        XCTAssertEqual(anotherBeacon!.accuracy, 14.42,
+        XCTAssertEqual(anotherBeacon.accuracy, 14.42,
                        "Should be able to serialize and deserialize a mutable beacon")
-        XCTAssertEqual(anotherBeacon!.rssi, -9,
+        XCTAssertEqual(anotherBeacon.rssi, -9,
                        "Should be able to serialize and deserialize a mutable beacon")
     }
 

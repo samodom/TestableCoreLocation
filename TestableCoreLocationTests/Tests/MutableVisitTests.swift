@@ -93,14 +93,14 @@ class MutableVisitTests: XCTestCase {
 
     func testMutableVisitSerialization() {
         let data = NSKeyedArchiver.archivedData(withRootObject: visit)
-        let anotherVisit = NSKeyedUnarchiver.unarchiveObject(with: data) as? CLVisit
-        XCTAssertEqual(anotherVisit!.coordinate, SampleCoordinate,
+        let anotherVisit = NSKeyedUnarchiver.unarchiveObject(with: data) as! CLVisit
+        XCTAssertEqual(anotherVisit.coordinate, SampleCoordinate,
                        "Should be able to serialize and deserialize a mutable visit")
-        XCTAssertEqual(anotherVisit!.horizontalAccuracy, 14.42,
+        XCTAssertEqual(anotherVisit.horizontalAccuracy, 14.42,
                        "Should be able to serialize and deserialize a mutable visit")
-        XCTAssertEqual(anotherVisit!.arrivalDate, .distantPast,
+        XCTAssertEqual(anotherVisit.arrivalDate, .distantPast,
                        "Should be able to serialize and deserialize a mutable visit")
-        XCTAssertEqual(anotherVisit!.departureDate, .distantFuture,
+        XCTAssertEqual(anotherVisit.departureDate, .distantFuture,
                        "Should be able to serialize and deserialize a mutable visit")
     }
 
