@@ -7,6 +7,7 @@
 //
 
 import CoreLocation
+import TestableCoreLocation
 
 let SampleCoordinate = CLLocationCoordinate2D(latitude: 12.3456, longitude: 65.4321)
 let OtherCoordinate = CLLocationCoordinate2D(latitude: 65.4321, longitude: 12.3456)
@@ -21,3 +22,8 @@ let SampleRegion = CLCircularRegion(
     radius: 14,
     identifier: "sample region"
 )
+
+let SampleAddressDictionary: CLGeocoderAddressDictionary = [
+    "one": "two",
+    "three": "four"
+]

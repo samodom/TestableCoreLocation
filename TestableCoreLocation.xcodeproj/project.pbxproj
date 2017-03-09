@@ -44,6 +44,8 @@
 		0A67F1281E70C3A1006F204F /* CLGeocoderCancelSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F1271E70C3A1006F204F /* CLGeocoderCancelSpy.swift */; };
 		0A67F12A1E70C65B006F204F /* CLLocationCoordinate2DEquatabiltyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F1291E70C65B006F204F /* CLLocationCoordinate2DEquatabiltyTests.swift */; };
 		0A67F12C1E70C802006F204F /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F12B1E70C802006F204F /* CLLocationCoordinate2D.swift */; };
+		0A67F12E1E70CB78006F204F /* MutablePlacemarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F12D1E70CB78006F204F /* MutablePlacemarkTests.swift */; };
+		0A67F1301E70CE51006F204F /* MutablePlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F12F1E70CE51006F204F /* MutablePlacemark.swift */; };
 		0AFECA571E6D25AF006BD0EF /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */; };
 		0AFECA5E1E6D25AF006BD0EF /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */; };
@@ -100,6 +102,8 @@
 		0A67F1271E70C3A1006F204F /* CLGeocoderCancelSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLGeocoderCancelSpy.swift; sourceTree = "<group>"; };
 		0A67F1291E70C65B006F204F /* CLLocationCoordinate2DEquatabiltyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2DEquatabiltyTests.swift; sourceTree = "<group>"; };
 		0A67F12B1E70C802006F204F /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		0A67F12D1E70CB78006F204F /* MutablePlacemarkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutablePlacemarkTests.swift; sourceTree = "<group>"; };
+		0A67F12F1E70CE51006F204F /* MutablePlacemark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutablePlacemark.swift; sourceTree = "<group>"; };
 		0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableCoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0AFECA511E6D25AF006BD0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				0A3A109A1E6E168600B81B32 /* MutableFloor.swift */,
 				0A3A10A01E6E223D00B81B32 /* MutableHeading.swift */,
 				0A3A10AA1E6E5B7400B81B32 /* MutableLocation.swift */,
+				0A67F12F1E70CE51006F204F /* MutablePlacemark.swift */,
 				0A3A10A41E6E475600B81B32 /* MutableVisit.swift */,
 				0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */,
 			);
@@ -222,13 +227,14 @@
 		0AFECA671E6D279B006BD0EF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0A67F1291E70C65B006F204F /* CLLocationCoordinate2DEquatabiltyTests.swift */,
 				0A3A10D41E70964900B81B32 /* CLGeocoderSpiesTests.swift */,
+				0A67F1291E70C65B006F204F /* CLLocationCoordinate2DEquatabiltyTests.swift */,
 				0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */,
 				0A3A10AC1E6E623300B81B32 /* MutableBeaconTests.swift */,
 				0A3A10981E6E15CF00B81B32 /* MutableFloorTests.swift */,
 				0A3A109E1E6E1F0400B81B32 /* MutableHeadingTests.swift */,
 				0A3A10A81E6E599300B81B32 /* MutableLocationTests.swift */,
+				0A67F12D1E70CB78006F204F /* MutablePlacemarkTests.swift */,
 				0A3A10A21E6E44CA00B81B32 /* MutableVisitTests.swift */,
 			);
 			path = Tests;
@@ -481,6 +487,7 @@
 				0A3A10871E6E027100B81B32 /* CLLocationManagerStopMonitoringSignificantLocationChangesSpy.swift in Sources */,
 				0A3A108D1E6E06D900B81B32 /* CLLocationManagerStartRangingBeaconsInRegionSpy.swift in Sources */,
 				0A67F1261E70B737006F204F /* CLGeocoderGeocodeAddressSpy.swift in Sources */,
+				0A67F1301E70CE51006F204F /* MutablePlacemark.swift in Sources */,
 				0A67F1221E70A22E006F204F /* CLGeocoderObjectSpyable.swift in Sources */,
 				0A3A10831E6E00B200B81B32 /* CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift in Sources */,
 				0A67F1201E70A0CF006F204F /* CLGeocoderReverseGeocodeLocationSpy.swift in Sources */,
@@ -503,6 +510,7 @@
 				0A67F12A1E70C65B006F204F /* CLLocationCoordinate2DEquatabiltyTests.swift in Sources */,
 				0A67F1241E70A3B3006F204F /* TestGeocoder.swift in Sources */,
 				0A3A10A91E6E599300B81B32 /* MutableLocationTests.swift in Sources */,
+				0A67F12E1E70CB78006F204F /* MutablePlacemarkTests.swift in Sources */,
 				0AFECA6C1E6D29A3006BD0EF /* TestLocationManager.swift in Sources */,
 				0A3A10991E6E15CF00B81B32 /* MutableFloorTests.swift in Sources */,
 				0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */,
