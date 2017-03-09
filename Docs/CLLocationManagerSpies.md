@@ -6,26 +6,26 @@ These spies forward all method calls to the original method implementation.
 
 **Direct spies:**
 
-* [`requestAlwaysAuthorization`](#spying-on-requestAlwaysAuthorization)
-* [`requestWhenInUseAuthorization`](#spying-on-requestWhenInUseAuthorization)
-* [`startUpdatingLocation`](#spying-on-startUpdatingLocation)
-* [`stopUpdatingLocation`](#spying-on-stopUpdatingLocation)
-* [`startUpdatingHeading`](#spying-on-startUpdatingHeading)
-* [`stopUpdatingHeading`](#spying-on-stopUpdatingHeading)
-* [`dismissHeadingCalibrationDisplay`](#spying-on-dismissHeadingCalibrationDisplay)
-* [`startMonitoringSignificantLocationChanges`](#spying-on-startMonitoringSignificantLocationChanges)
-* [`stopMonitoringSignificantLocationChanges`](#spying-on-stopMonitoringSignificantLocationChanges)
-* [`startMonitoring(for:)`](#spying-on-startMonitoringfor)
-* [`stopMonitoring(for:)`](#spying-on-stopMonitoringfor)
-* [`startRangingBeacons(in:)`](#spying-on-startRangingBeaconsin)
-* [`stopRangingBeacons(in:)`](#spying-on-stopRangingBeaconsin)
-* [`startMonitoringVisits`](#spying-on-startMonitoringVisits)
-* [`stopMonitoringVisits`](#spying-on-stopMonitoringVisits)
-* [`allowDeferredLocationUpdates(untilTraveled:timeout:)`](#spying-on-allowDeferredLocationUpdatesuntilTraveledtimeout)
-* [`disallowDeferredLocationUpdates`](#spying-on-disallowDeferredLocationUpdates)
+* [`requestAlwaysAuthorization`](#spying-on-requestalwaysauthorization)
+* [`requestWhenInUseAuthorization`](#spying-on-requestwheninuseauthorization)
+* [`startUpdatingLocation`](#spying-on-startupdatinglocation)
+* [`stopUpdatingLocation`](#spying-on-stopupdatinglocation)
+* [`startUpdatingHeading`](#spying-on-startupdatingheading)
+* [`stopUpdatingHeading`](#spying-on-stopupdatingheading)
+* [`dismissHeadingCalibrationDisplay`](#spying-on-dismissheadingcalibrationdisplay)
+* [`startMonitoringSignificantLocationChanges`](#spying-on-startmonitoringsignificantlocationchanges)
+* [`stopMonitoringSignificantLocationChanges`](#spying-on-stopmonitoringsignificantlocationchanges)
+* [`startMonitoring(for:)`](#spying-on-startmonitoringfor)
+* [`stopMonitoring(for:)`](#spying-on-stopmonitoringfor)
+* [`startRangingBeacons(in:)`](#spying-on-startrangingbeaconsin)
+* [`stopRangingBeacons(in:)`](#spying-on-stoprangingbeaconsin)
+* [`startMonitoringVisits`](#spying-on-startmonitoringvisits)
+* [`stopMonitoringVisits`](#spying-on-stopmonitoringvisits)
+* [`allowDeferredLocationUpdates(untilTraveled:timeout:)`](#spying-on-allowdeferredlocationupdatesuntiltraveledtimeout)
+* [`disallowDeferredLocationUpdates`](#spying-on-disallowdeferredlocationupdates)
 
 
-# Spying on `requestAlwaysAuthorization`
+## Spying on `requestAlwaysAuthorization`
 
 Use this spy to validate that a location manager has been asked to prompt the user for 'always' authorization.  The spy controller is named `CLLocationManager.RequestAlwaysAuthorizationSpyController`.
 

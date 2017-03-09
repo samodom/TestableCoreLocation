@@ -8,12 +8,12 @@ These spies forward NO method calls to the original method implementation.
 
 **Direct spies:**
 
-* [`reverseGeocodeLocation(_:completionHandler:)`](#spying-on-reverseGeocodeLocation_completionHandler)
-* [`geocodeAddressDictionary(_:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-and-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler), [`geocodeAddressString(_:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-and-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler) and [`geocodeAddressString(_:in:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-and-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler)
-* [`cancelGeocode()`](#spying-on-cancelGeocode)
+* [`reverseGeocodeLocation(_:completionHandler:)`](#spying-on-reversegeocodelocation_completionhandler)
+* [`geocodeAddressDictionary(_:completionHandler:)`](#spying-on-geocodeaddressdictionary_completionhandler-and-geocodeaddressstring_completionhandler-and-geocodeaddressstring_incompletionhandler), [`geocodeAddressString(_:completionHandler:)`](#spying-on-geocodeaddressdictionary_completionhandler-and-geocodeaddressstring_completionhandler-and-geocodeaddressstring_incompletionhandler) and [`geocodeAddressString(_:in:completionHandler:)`](#spying-on-geocodeaddressdictionary_completionhandler-and-geocodeaddressstring_completionhandler-and-geocodeaddressstring_incompletionhandler)
+* [`cancelGeocode()`](#spying-on-cancelgeocode)
 
 
-# Spying on `reverseGeocodeLocation(_:completionHandler:)`
+## Spying on `reverseGeocodeLocation(_:completionHandler:)`
 
 Use this spy to validate that a geocoder has been asked to reverse-geocode a location.  The spy controller is named `CLGeocoder.ReverseGeocodeLocationSpyController`.
 
@@ -24,7 +24,7 @@ Three properties provide evidence about a potential method call:
 * `var reverseGeocodeLocationCompletionHandler: CLGeocodeCompletionHandler?`
 
 
-# Spying on `geocodeAddressDictionary(_:completionHandler:)`, `geocodeAddressString(_:completionHandler:)` and `geocodeAddressString(_:in:completionHandler:)`
+## Spying on `geocodeAddressDictionary(_:completionHandler:)`, `geocodeAddressString(_:completionHandler:)` and `geocodeAddressString(_:in:completionHandler:)`
 
 Use this spy to validate that a geocoder has been asked to forward-geocode an address.  The spy controller is named `CLGeocoder.ForwardGeocodeAddressSpyController`.
 
@@ -37,7 +37,7 @@ Five properties provide evidence about a potential method call:
 * `var forwardGeocodeAddressCompletionHandler: CLGeocodeCompletionHandler?`
 
 
-# Spying on `cancelGeocode`
+## Spying on `cancelGeocode`
 
 Use this spy to validate that a geocoder has been asked to cancel geocoding.  The spy controller is named `CLGeocoder.CancelGeocodeSpyController`.
 
