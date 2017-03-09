@@ -1,17 +1,25 @@
 TestableCoreLocation
 ====================
 
-This is a framework that uses the same class names as some classes from CoreLocation and extends them using the fully qualified name of the real class. This allows for a shim layer between your application code and CoreLocation **only while testing**.
 
-#### Method spies
+## Spies
 
-- `CLLocationManager`
-  - [Capturing instance calls](CLLocationManager.md)
+* [`CLLocationManager`](Docs/CLLocationManagerSpies.md)
+* [`CLGeocoder`](Docs/CLGeocoderSpies.md)
 
 
-#### Mutable Immutables
+## Testing subclasses
 
-- `CLFloor`
-- `CLHeading`
-- `CLLocation`
-- `CLVisit`
+* [`MutableFloor`](Docs/MutableFloor.md)
+* [`MutableHeading`](Docs/MutableHeading.md)
+* [`MutableVisit`](Docs/MutableVisit.md)
+* [`MutableLocation`](Docs/MutableLocation.md)
+* [`MutableBeacon`](Docs/MutableBeacon.md)
+* [`MutablePlacemark`](Docs/MutablePlacemark.md)
+
+> Each of these subclasses are fully serializable.
+
+
+## Equatability
+
+* [`CLLocationCoordinate2D`](Docs/CLLocationCoordinate2D.md)
