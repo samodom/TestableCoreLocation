@@ -9,7 +9,7 @@ These spies forward NO method calls to the original method implementation.
 **Direct spies:**
 
 * [`reverseGeocodeLocation(_:completionHandler:)`](#spying-on-reverseGeocodeLocation_completionHandler)
-* [`geocodeAddressDictionary(_:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-and-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler), [`geocodeAddressString(_:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-and-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler) and [`geocodeAddressString(_:in:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-and-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler)
+* [`geocodeAddressDictionary(_:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler), [`geocodeAddressString(_:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler) and [`geocodeAddressString(_:in:completionHandler:)`](#spying-on-geocodeAddressDictionary_completionHandler-geocodeAddressString_completionHandler-and-geocodeAddressString_incompletionHandler)
 * [`cancelGeocode()`](#spying-on-cancelGeocode)
 
 
