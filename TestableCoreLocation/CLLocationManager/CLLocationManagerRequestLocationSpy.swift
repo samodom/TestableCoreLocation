@@ -11,6 +11,7 @@ import FoundationSwagger
 import TestSwagger
 
 
+@available(iOS, introduced: 9.0)
 public extension CLLocationManager {
 
     private static let requestLocationCalledKeyString = UUIDKeyString()

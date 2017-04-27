@@ -56,7 +56,7 @@ class MutableLocationTests: XCTestCase {
         XCTAssertEqualWithAccuracy(
             location.timestamp.timeIntervalSince1970,
             now.timeIntervalSince1970,
-            accuracy: 1,
+            accuracy: 3,
             "Should be able to create a mutable location without a timestamp"
         )
         XCTAssertNil(location.floor, "User-created locations do not have floors by default")

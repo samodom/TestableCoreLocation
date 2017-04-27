@@ -52,6 +52,8 @@ A single evidence property indicates whether the method was called:
 
 * `var requestLocationCalled: Bool`
 
+** Note: this method and its spy is only available on iOS 9.0 and higher
+
 
 ## Spying on `startUpdatingLocation`
 
