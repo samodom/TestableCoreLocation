@@ -30,6 +30,11 @@ open class TestLocationManager: CLLocationManager {
         stopUpdatingLocationTestMethodCalled = true
     }
 
+    final var requestLocationTestMethodCalled = false
+    dynamic open override func requestLocation() {
+        requestLocationTestMethodCalled = true
+    }
+
     final var startUpdatingHeadingTestMethodCalled = false
     dynamic open override func startUpdatingHeading() {
         startUpdatingHeadingTestMethodCalled = true
