@@ -8,6 +8,7 @@ These spies forward all method calls to the original method implementation.
 
 * [`requestAlwaysAuthorization`](#spying-on-requestalwaysauthorization)
 * [`requestWhenInUseAuthorization`](#spying-on-requestwheninuseauthorization)
+* [`requestLocation`](#spying-on-requestlocation)
 * [`startUpdatingLocation`](#spying-on-startupdatinglocation)
 * [`stopUpdatingLocation`](#spying-on-stopupdatinglocation)
 * [`startUpdatingHeading`](#spying-on-startupdatingheading)
@@ -41,6 +42,15 @@ Use this spy to validate that a location manager has been asked to prompt the us
 A single evidence property indicates whether the method was called:
 
 * `var requestWhenInUseAuthorizationCalled: Bool`
+
+
+## Spying on `requestLocation`
+
+Use this spy to validate that a location manager has had the user's location requested.  The spy controller is named `CLLocationManager.RequestLocationSpyController`.
+
+A single evidence property indicates whether the method was called:
+
+* `var requestLocationCalled: Bool`
 
 
 ## Spying on `startUpdatingLocation`

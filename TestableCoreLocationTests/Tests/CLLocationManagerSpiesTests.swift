@@ -116,6 +116,31 @@ class CLLocationManagerSpiesTests: XCTestCase {
     }
 
 
+    // MARK: - `requestLocation`
+
+    func testSpyingOnRequestLocation() {
+        XCTAssertFalse(CLLocationManager.RequestLocationSpyController.forwardsInvocations,
+                       "The spy controller should not indicate that it forwards spy method invocations")
+        XCTAssertFalse(manager.requestLocationCalled,
+                       "By default the location manager should not indicate having received a location request")
+
+        let spy = CLLocationManager.RequestLocationSpyController.createSpy(on: manager)!
+        spy.beginSpying()
+
+        manager.requestLocation()
+
+        XCTAssertTrue(manager.requestLocationCalled,
+                      "The location manager should indicate having received a location request")
+        XCTAssertFalse(manager.requestLocationTestMethodCalled,
+                       "The spy method should not forward the method call to the original implementation")
+
+        spy.endSpying()
+
+        XCTAssertFalse(manager.requestLocationCalled,
+                       "The flag should be cleared after spying is complete")
+    }
+
+
     // MARK: - `startUpdatingHeading`
 
     func testSpyingOnStartUpdatingHeading() {
