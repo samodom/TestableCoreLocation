@@ -47,6 +47,7 @@
 		0A67F12E1E70CB78006F204F /* MutablePlacemarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F12D1E70CB78006F204F /* MutablePlacemarkTests.swift */; };
 		0A67F1301E70CE51006F204F /* MutablePlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F12F1E70CE51006F204F /* MutablePlacemark.swift */; };
 		0A67F1321E738415006F204F /* CoordinateEqualityTestingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F1311E738415006F204F /* CoordinateEqualityTestingHelpers.swift */; };
+		0AF0C75F1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0C75E1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift */; };
 		0AFECA571E6D25AF006BD0EF /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */; };
 		0AFECA5E1E6D25AF006BD0EF /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */; };
@@ -106,6 +107,7 @@
 		0A67F12D1E70CB78006F204F /* MutablePlacemarkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutablePlacemarkTests.swift; sourceTree = "<group>"; };
 		0A67F12F1E70CE51006F204F /* MutablePlacemark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutablePlacemark.swift; sourceTree = "<group>"; };
 		0A67F1311E738415006F204F /* CoordinateEqualityTestingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateEqualityTestingHelpers.swift; sourceTree = "<group>"; };
+		0AF0C75E1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerRequestLocationSpy.swift; sourceTree = "<group>"; };
 		0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableCoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0AFECA511E6D25AF006BD0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				0A3A10821E6E00B200B81B32 /* CLLocationManagerDismissHeadingCalibrationDisplaySpy.swift */,
 				0A3A10781E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift */,
 				0A3A10761E6DFC6300B81B32 /* CLLocationManagerRequestAlwaysAuthorizationSpy.swift */,
+				0AF0C75E1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift */,
 				0A3A10741E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift */,
 				0A3A10881E6E040300B81B32 /* CLLocationManagerStartMonitoringForRegionSpy.swift */,
 				0A3A10841E6E019300B81B32 /* CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift */,
@@ -400,7 +403,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4E04C9D3F3AC034D5A21B8BC /* [CP] Copy Pods Resources */ = {
@@ -430,7 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E29A12D4DB9EA561C5029355 /* [CP] Embed Pods Frameworks */ = {
@@ -475,6 +478,7 @@
 				0A67F1281E70C3A1006F204F /* CLGeocoderCancelSpy.swift in Sources */,
 				0A3A10951E6E0CEE00B81B32 /* CLLocationManagerAllowDeferredLocationUpdatesSpy.swift in Sources */,
 				0A3A107B1E6DFDB900B81B32 /* CLLocationManagerStartUpdatingLocationSpy.swift in Sources */,
+				0AF0C75F1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift in Sources */,
 				0A3A10851E6E019300B81B32 /* CLLocationManagerStartMonitoringSignificantLocationChangesSpy.swift in Sources */,
 				0A3A10751E6DFAA100B81B32 /* CLLocationManagerRequestWhenInUseAuthorizationSpy.swift in Sources */,
 				0A3A107F1E6DFF0900B81B32 /* CLLocationManagerStartUpdatingHeadingSpy.swift in Sources */,
@@ -679,7 +683,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C2BAFA2621F633D672DEC47E /* Pods-TestableCoreLocationWorkspace-TestableCoreLocationTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QW3T4F66DC;
 				INFOPLIST_FILE = TestableCoreLocationTests/Info.plist;
@@ -695,7 +698,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96DFD0D18600B444BA053D5E /* Pods-TestableCoreLocationWorkspace-TestableCoreLocationTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QW3T4F66DC;
 				INFOPLIST_FILE = TestableCoreLocationTests/Info.plist;

@@ -1,8 +1,8 @@
 PODS:
-  - FoundationSwagger (0.2.13)
-  - TestableUIKit (0.2.1):
+  - FoundationSwagger (0.2.14)
+  - TestableUIKit (0.2.2):
     - TestSwagger
-  - TestSwagger (0.1.5):
+  - TestSwagger (0.1.6):
     - FoundationSwagger
 
 DEPENDENCIES:
@@ -10,10 +10,10 @@ DEPENDENCIES:
   - TestSwagger
 
 SPEC CHECKSUMS:
-  FoundationSwagger: 7cbf965cfeab4b8064b4913369b9ec4d991793a3
-  TestableUIKit: 4ea91c219e275cd784affd585ba40f32edd59d92
-  TestSwagger: 2a6ef3a750e269d2d7a256877995796e54d499b6
+  FoundationSwagger: e5aa3e41320e0e2931dbd4a12ab4cf2e03c558e4
+  TestableUIKit: 677e7d18b0912757a92548eba2c2d1832b94c7ac
+  TestSwagger: 10428263bd31debe64adc7c1444c7517e5a88548
 
 PODFILE CHECKSUM: aa1c1a4280ca8ca0c2372b178b004ad8a7394401
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
