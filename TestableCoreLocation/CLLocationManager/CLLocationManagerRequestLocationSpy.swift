@@ -22,9 +22,14 @@ public extension CLLocationManager {
 
 
     /// Spy controller for ensuring that a location manager has had `requestLocation` called on it.
+    @available(iOS, introduced: 9.0)
     public enum RequestLocationSpyController: SpyController {
         public static let rootSpyableClass: AnyClass = CLLocationManager.self
         public static let vector = SpyVector.direct
+        public static let evidence = [requestLocationCalledReference] as Set
+        public static let forwardsInvocations = false
+
+        @available(iOS, introduced: 9.0)
         public static let coselectors = [
             SpyCoselectors(
                 methodType: .instance,
@@ -32,8 +37,6 @@ public extension CLLocationManager {
                 spy: #selector(CLLocationManager.spy_requestLocation)
             )
         ] as Set
-        public static let evidence = [requestLocationCalledReference] as Set
-        public static let forwardsInvocations = false
     }
 
 
