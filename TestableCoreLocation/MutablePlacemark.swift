@@ -116,6 +116,7 @@ open class MutablePlacemark: CLPlacemark {
 
     /// Mutable time zone of a placemark.
     private var _timeZone: TimeZone?
+    @available(iOS, introduced: 9.0)
     open override var timeZone: TimeZone? {
         get { return _timeZone }
         set { _timeZone = newValue }
@@ -164,10 +165,12 @@ open class MutablePlacemark: CLPlacemark {
         static let thoroughfare = "thoroughfare"
         static let subThoroughfare = "subThoroughfare"
         static let region = "region"
-        static let timeZone = "timeZone"
         static let inlandWater = "inlandWater"
         static let ocean = "ocean"
         static let areasOfInterest = "areasOfInterest"
+
+        @available(iOS, introduced: 9.0)
+        static let timeZone = "timeZone"
     }
 
     public required init?(coder: NSCoder) {
@@ -184,10 +187,13 @@ open class MutablePlacemark: CLPlacemark {
         _thoroughfare = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.thoroughfare) as? String
         _subThoroughfare = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.subThoroughfare) as? String
         _region = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.region) as? CLRegion
-        _timeZone = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.timeZone) as? TimeZone
         _inlandWater = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.inlandWater) as? String
         _ocean = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.ocean) as? String
         _areasOfInterest = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.areasOfInterest) as? [String]
+
+        if #available(iOS 9.0, *) {
+            _timeZone = coder.decodeObject(forKey: MutablePlacemarkEncodingKeys.timeZone) as? TimeZone
+        }
 
         super.init(coder: coder)
     }
@@ -206,10 +212,13 @@ open class MutablePlacemark: CLPlacemark {
         coder.encode(thoroughfare, forKey: MutablePlacemarkEncodingKeys.thoroughfare)
         coder.encode(subThoroughfare, forKey: MutablePlacemarkEncodingKeys.subThoroughfare)
         coder.encode(region, forKey: MutablePlacemarkEncodingKeys.region)
-        coder.encode(timeZone, forKey: MutablePlacemarkEncodingKeys.timeZone)
         coder.encode(inlandWater, forKey: MutablePlacemarkEncodingKeys.inlandWater)
         coder.encode(ocean, forKey: MutablePlacemarkEncodingKeys.ocean)
         coder.encode(areasOfInterest, forKey: MutablePlacemarkEncodingKeys.areasOfInterest)
+
+        if #available(iOS 9.0, *) {
+            coder.encode(timeZone, forKey: MutablePlacemarkEncodingKeys.timeZone)
+        }
     }
 
 }

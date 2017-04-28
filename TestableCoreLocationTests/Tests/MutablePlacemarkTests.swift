@@ -107,6 +107,7 @@ class MutablePlacemarkTests: XCTestCase {
                        "Should be able to change the region of a placemark")
     }
 
+    @available(iOS, introduced: 9.0)
     func testTimeZoneIsMutable() {
         mutablePlacemark.timeZone = timeZone
         XCTAssertEqual(placemark.timeZone, timeZone,
@@ -145,10 +146,13 @@ class MutablePlacemarkTests: XCTestCase {
         mutablePlacemark.thoroughfare = "Speer Blvd."
         mutablePlacemark.subThoroughfare = "Speer Blvd."
         mutablePlacemark.region = SampleRegion
-        mutablePlacemark.timeZone = timeZone
         mutablePlacemark.inlandWater = "Loch Ness"
         mutablePlacemark.ocean = "Pacific"
         mutablePlacemark.areasOfInterest = areasOfInterest
+
+        if #available(iOS 9.0, *) {
+            mutablePlacemark.timeZone = timeZone
+        }
 
         let data = NSKeyedArchiver.archivedData(withRootObject: placemark)
         let anotherPlacemark = NSKeyedUnarchiver.unarchiveObject(with: data) as! CLPlacemark
@@ -182,14 +186,17 @@ class MutablePlacemarkTests: XCTestCase {
                        "Should be able to serialize and deserialize a mutable placemark")
         XCTAssertEqual(anotherPlacemark.region, SampleRegion,
                        "Should be able to serialize and deserialize a mutable placemark")
-        XCTAssertEqual(anotherPlacemark.timeZone, timeZone,
-                       "Should be able to serialize and deserialize a mutable placemark")
         XCTAssertEqual(anotherPlacemark.inlandWater, "Loch Ness",
                        "Should be able to serialize and deserialize a mutable placemark")
         XCTAssertEqual(anotherPlacemark.ocean, "Pacific",
                        "Should be able to serialize and deserialize a mutable placemark")
         XCTAssertEqual(anotherPlacemark.areasOfInterest!, areasOfInterest,
                        "Should be able to serialize and deserialize a mutable placemark")
+
+        if #available(iOS 9.0, *) {
+            XCTAssertEqual(anotherPlacemark.timeZone, timeZone,
+                           "Should be able to serialize and deserialize a mutable placemark")
+        }
     }
 
 }
