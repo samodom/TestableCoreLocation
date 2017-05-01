@@ -92,6 +92,8 @@ public extension CLGeocoder {
         forwardGeocodeAddressCalled = true
         forwardGeocodeAddressDictionary = dictionary
         forwardGeocodeAddressCompletionHandler = completionHandler
+
+        CLGeocoder.mostRecentRequestingGeocoder = self
     }
 
 
@@ -105,6 +107,8 @@ public extension CLGeocoder {
         forwardGeocodeAddressCalled = true
         forwardGeocodeAddressString = address
         forwardGeocodeAddressCompletionHandler = completionHandler
+
+        CLGeocoder.mostRecentRequestingGeocoder = self
     }
 
 
@@ -120,6 +124,8 @@ public extension CLGeocoder {
         forwardGeocodeAddressString = address
         forwardGeocodeAddressRegion = region
         forwardGeocodeAddressCompletionHandler = completionHandler
+
+        CLGeocoder.mostRecentRequestingGeocoder = self
     }
 
 

@@ -12,6 +12,8 @@ These spies forward NO method calls to the original method implementation.
 * [`geocodeAddressDictionary(_:completionHandler:)`](#spying-on-geocodeaddressdictionary_completionhandler-geocodeaddressstring_completionhandler-and-geocodeaddressstring_incompletionhandler), [`geocodeAddressString(_:completionHandler:)`](#spying-on-geocodeaddressdictionary_completionhandler-geocodeaddressstring_completionhandler-and-geocodeaddressstring_incompletionhandler) and [`geocodeAddressString(_:in:completionHandler:)`](#spying-on-geocodeaddressdictionary_completionhandler-geocodeaddressstring_completionhandler-and-geocodeaddressstring_incompletionhandler)
 * [`cancelGeocode()`](#spying-on-cancelgeocode)
 
+Since geocoders are one-shot objects that don't need to be stored by a caller, they are difficult to capture during testing.  In order to partially remedy this issue, all of the included spy methods (except `cancelGeocode`) capture the geocoder being invoked.  The geocoder is available in the `mostRecentRequestingGeocoder: CLGeocoder?` class property of `CLGeocoder`.  In order to begin spying without an instance, create a dummy geocoder, begin spying and then invoke your geocoder-creating code.  This property is cleared when spying is completed.
+
 
 ## Spying on `reverseGeocodeLocation(_:completionHandler:)`
 

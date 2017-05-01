@@ -15,6 +15,16 @@ class CLGeocoderSpiesTests: XCTestCase {
 
     let geocoder = TestGeocoder()
 
+    override func tearDown() {
+        CLGeocoder.mostRecentRequestingGeocoder = nil
+
+        super.tearDown()
+    }
+
+    func testMostRecentRequestingGeocoderIsMissingByDefault() {
+        XCTAssertNil(CLGeocoder.mostRecentRequestingGeocoder,
+                     "The most recent requesting geocoder should be missing by default")
+    }
 
     // MARK: - `reverseGeocodeLocation(_:completionHandler:)`
 
@@ -44,6 +54,9 @@ class CLGeocoderSpiesTests: XCTestCase {
                        "The location should be captured")
         XCTAssertFalse(geocoder.reverseGeocodeLocationTestMethodCalled,
                        "The spy method should not forward the method call to the original implementation")
+
+        XCTAssertEqual(CLGeocoder.mostRecentRequestingGeocoder, geocoder,
+                       "The invoked geocoder should be captured by the class")
 
         XCTAssertFalse(completionHandlerInvoked,
                        "The spy method should not forward the method call to the original implementation")
@@ -96,6 +109,9 @@ class CLGeocoderSpiesTests: XCTestCase {
         XCTAssertFalse(geocoder.geocodeAddressDictionaryTestMethodCalled,
                        "The spy method should not forward the method call to the original implementation")
 
+        XCTAssertEqual(CLGeocoder.mostRecentRequestingGeocoder, geocoder,
+                       "The invoked geocoder should be captured by the class")
+
         XCTAssertFalse(completionHandlerInvoked,
                        "The spy method should not forward the method call to the original implementation")
         geocoder.forwardGeocodeAddressCompletionHandler!(nil, nil)
@@ -135,6 +151,9 @@ class CLGeocoderSpiesTests: XCTestCase {
                        "The string should be captured")
         XCTAssertFalse(geocoder.geocodeAddressStringTestMethodCalled,
                        "The spy method should not forward the method call to the original implementation")
+
+        XCTAssertEqual(CLGeocoder.mostRecentRequestingGeocoder, geocoder,
+                       "The invoked geocoder should be captured by the class")
 
         XCTAssertFalse(completionHandlerInvoked,
                        "The spy method should not forward the method call to the original implementation")
@@ -184,6 +203,9 @@ class CLGeocoderSpiesTests: XCTestCase {
         XCTAssertFalse(geocoder.geocodeAddressStringInRegionTestMethodCalled,
                        "The spy method should not forward the method call to the original implementation")
 
+        XCTAssertEqual(CLGeocoder.mostRecentRequestingGeocoder, geocoder,
+                       "The invoked geocoder should be captured by the class")
+
         XCTAssertFalse(completionHandlerInvoked,
                        "The spy method should not forward the method call to the original implementation")
         geocoder.forwardGeocodeAddressCompletionHandler!(nil, nil)
@@ -219,6 +241,9 @@ class CLGeocoderSpiesTests: XCTestCase {
                       "The location geocoder should indicate having been asked to cancelGeocode geocoding")
         XCTAssertFalse(geocoder.cancelGeocodeTestMethodCalled,
                        "The spy method should not forward the method call to the original implementation")
+
+        XCTAssertNil(CLGeocoder.mostRecentRequestingGeocoder,
+                     "The most recent requesting geocoder should not be captured when spying on `cancelGeocode`")
 
         spy.endSpying()
 
