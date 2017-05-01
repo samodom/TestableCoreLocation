@@ -48,6 +48,7 @@
 		0A67F1301E70CE51006F204F /* MutablePlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F12F1E70CE51006F204F /* MutablePlacemark.swift */; };
 		0A67F1321E738415006F204F /* CoordinateEqualityTestingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67F1311E738415006F204F /* CoordinateEqualityTestingHelpers.swift */; };
 		0AF0C75F1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0C75E1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift */; };
+		0AF0C7811EB6F23100907ECB /* CLGeocoderMostRecentRequestingGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0C7801EB6F23100907ECB /* CLGeocoderMostRecentRequestingGeocoder.swift */; };
 		0AFECA571E6D25AF006BD0EF /* TestableCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */; };
 		0AFECA5E1E6D25AF006BD0EF /* TestableCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AFECA691E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFECA681E6D27C7006BD0EF /* CLLocationManagerSpiesTests.swift */; };
@@ -108,6 +109,7 @@
 		0A67F12F1E70CE51006F204F /* MutablePlacemark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutablePlacemark.swift; sourceTree = "<group>"; };
 		0A67F1311E738415006F204F /* CoordinateEqualityTestingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateEqualityTestingHelpers.swift; sourceTree = "<group>"; };
 		0AF0C75E1EB2AF9400907ECB /* CLLocationManagerRequestLocationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationManagerRequestLocationSpy.swift; sourceTree = "<group>"; };
+		0AF0C7801EB6F23100907ECB /* CLGeocoderMostRecentRequestingGeocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLGeocoderMostRecentRequestingGeocoder.swift; sourceTree = "<group>"; };
 		0AFECA4D1E6D25AF006BD0EF /* TestableCoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestableCoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFECA501E6D25AF006BD0EF /* TestableCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestableCoreLocation.h; sourceTree = "<group>"; };
 		0AFECA511E6D25AF006BD0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				0A67F1251E70B737006F204F /* CLGeocoderGeocodeAddressSpy.swift */,
 				0A67F1211E70A22E006F204F /* CLGeocoderObjectSpyable.swift */,
 				0A67F11F1E70A0CF006F204F /* CLGeocoderReverseGeocodeLocationSpy.swift */,
+				0AF0C7801EB6F23100907ECB /* CLGeocoderMostRecentRequestingGeocoder.swift */,
 			);
 			path = CLGeocoder;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				0A3A10AB1E6E5B7400B81B32 /* MutableLocation.swift in Sources */,
 				0A3A10931E6E089100B81B32 /* CLLocationManagerStopMonitoringVisitsSpy.swift in Sources */,
 				0A3A10791E6DFD0A00B81B32 /* CLLocationManagerObjectSpyable.swift in Sources */,
+				0AF0C7811EB6F23100907ECB /* CLGeocoderMostRecentRequestingGeocoder.swift in Sources */,
 				0A3A10A11E6E223D00B81B32 /* MutableHeading.swift in Sources */,
 				0A67F12C1E70C802006F204F /* CLLocationCoordinate2D.swift in Sources */,
 				0A3A108B1E6E05F900B81B32 /* CLLocationManagerStopMonitoringForRegionSpy.swift in Sources */,

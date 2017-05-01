@@ -63,6 +63,8 @@ public extension CLGeocoder {
         reverseGeocodeLocationCalled = true
         reverseGeocodeLocationLocation = location
         reverseGeocodeLocationCompletionHandler = completionHandler
+
+        CLGeocoder.mostRecentRequestingGeocoder = self
     }
 
 

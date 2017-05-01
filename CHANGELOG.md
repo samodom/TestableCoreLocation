@@ -1,6 +1,9 @@
 TestableCoreLocation Changelog
 ==============================
 
+### v0.1.3 (May 1, 2017)
+ - Added `CLGeocoder.mostRecentRequestingGeocoder` property
+
 ### v0.1.2 (April 27, 2017)
  - Adding spy for `requestLocation` on `CLLocationManager`
 
