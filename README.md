@@ -1,5 +1,4 @@
-TestableCoreLocation
-====================
+# TestableCoreLocation - DEPRECATED
 
 
 ## Spies
